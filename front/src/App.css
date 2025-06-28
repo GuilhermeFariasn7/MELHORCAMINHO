@@ -1,0 +1,156 @@
+:root {
+  --cor-texto-grafo: #990000;    /* vermelho escuro */
+  --cor-no-grafo: #007f00;       /* verde escuro */
+  --cor-sombra-grafo: rgba(0, 127, 0, 0.5);
+
+  --cor-fundo-principal: #f9f9f9; /* branco suave */
+  --cor-fundo-card: #ffffff;      /* branco puro */
+  --cor-borda-card: #000000;      /* preto */
+  --cor-texto-primario: #222222; /* quase preto */
+  --cor-texto-secundario: #550000; /* vermelho mais claro */
+  --cor-botao-fundo: #007f00;     /* verde escuro */
+  --cor-botao-hover: #004d00;     /* verde mais escuro */
+  --cor-botao-texto: #ffffff;     /* branco */
+}
+
+/* Container principal */
+.app-container {
+  background: #6A7B4F; /* Verde UNESC */
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card do formulário e resultados */
+.graph-theme-card,
+.alert-primary,
+.card {
+  background-color: #FFFFFF;
+  color: #222222;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 900px;      /* aumentei aqui */
+  margin: 0 auto 2rem auto;
+}
+
+.btn-cinza {
+  background-color: #6c757d; /* cinza bootstrap padrão */
+  border-color: #6c757d;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.8rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.6);
+}
+
+.btn-cinza:hover {
+  background-color: #5a6268; /* cinza mais escuro no hover */
+  border-color: #545b62;
+  color: white;
+  box-shadow: 0 6px 18px rgba(90, 98, 104, 0.8);
+}
+
+
+.graph-theme-card {
+  max-width: 90%;      /* aumentei o limite para ficar maior */
+  width: 95vw;           /* responsivo para caber na tela em dispositivos menores */
+  padding: 3rem 3rem;    /* aumentei o padding para mais espaçamento interno */
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid #6A7B4F;
+  margin: 2rem auto;     /* centraliza e adiciona margem em cima e baixo */
+}
+
+
+/* Alerta que aparece no Resultado - fundo branco com borda e texto vermelho */
+.alert-primary {
+  background-color: #FFFFFF;
+  border-color: #B00020; /* Vermelho forte */
+  color: #B00020;
+  box-shadow: 0 0 10px rgba(176, 0, 32, 0.3);
+}
+
+/* Estilos de texto em destaque */
+strong {
+  color: #6A7B4F; /* Verde UNESC */
+}
+
+/* Botões primários - verde com hover vermelho */
+.btn-verde {
+  background-color: #6A7B4F; /* Verde UNESC */
+  border-color: #556A3F;
+  color: #07fceb;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.6rem 1.8rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(106, 123, 79, 0.6);
+}
+
+.btn-verde:hover {
+  background-color: #616161; /* Vermelho */
+  border-color: #800015;
+  color: #FFFFFF;
+  box-shadow: 0 6px 18px rgba(176, 0, 32, 0.8);
+}
+
+/* Labels e textos */
+label.form-label,
+p,
+.form-label {
+  color: #222222;
+  font-weight: 600;
+}
+
+/* Inputs e selects */
+input.form-control,
+select.form-select {
+  background-color: #FFFFFF;
+  border: 1px solid #6A7B4F; /* Verde UNESC */
+  color: #222222;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  background-color: #F0F3EB; /* Branco esverdeado clarinho */
+  border-color: #6A7B4F; /* Verde UNESC */
+  box-shadow: 0 0 8px #6A7B4F;
+  color: #222222;
+  outline: none;
+}
+
+/* Placeholder */
+input::placeholder {
+  color: #A1887F;
+  opacity: 1;
+}
+
+/* Mensagem de erro */
+.text-danger {
+  color: #B00020 !important; /* Vermelho forte */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Estilizando a área do grafo */
+.graph-container {
+  background: #FFFFFF;
+  border: 2px solid #6A7B4F;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(106, 123, 79, 0.4);
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  
+}
