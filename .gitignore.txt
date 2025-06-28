@@ -1,0 +1,9 @@
+# Ignora node_modules em qualquer subpasta
+**/node_modules/
+
+# Outros arquivos que normalmente ignoramos
+.env
+.DS_Store
+npm-debug.log
+dist/
+build/
